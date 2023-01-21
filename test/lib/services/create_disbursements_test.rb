@@ -4,7 +4,7 @@ require "services/create_disbursements"
 module Services
   class CreateDisbursementsTest < Minitest::Test
     def setup
-      merchant = Merchant.create(name: "Paula")
+      merchant = Merchant.create(name: "James")
       shopper = Shopper.create(name: "Paulo")
 
       Order.create(amount: 10.00, completed_at: 7.days.ago, merchant_id: merchant.id, shopper_id: shopper.id)
@@ -19,10 +19,10 @@ module Services
     end
 
     def test_call
-      CreateDisbursements.call
+      Services::CreateDisbursements.call
 
-      assert_equal Disbursement.count, 2
-      assert_equal Disbursement.last.amount, 9.90
+      assert_equal 2, Disbursement.count
+      assert_equal 9.90, Disbursement.last.amount
     end
   end
 end
