@@ -16,7 +16,7 @@ class DisbursementAmount
   private
 
   def fee_percentage
-    FEES.select { |range| range.include?(amount) }.values.first / 100
+    FEES.select { |range| range.include?(amount) }.values.first.to_f / 100
   end
 
   attr_reader :amount
