@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
-  belongs_to :merchants
-  belongs_to :shoppers
+  belongs_to :merchant
+  belongs_to :shopper
 
   has_one :disbursement
 end
