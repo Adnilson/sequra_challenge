@@ -47,3 +47,10 @@ Things that I would do would if I had more time:
   - Show disbursements for each merchant in the API endpoint, could be `/disbursements/merchant_id`.
   - Use `BigDecimal` or `money` gem for the money calculations.
   - Use `docker`.
+
+
+**Edit:**
+
+I fixed a bug on commit `6b5d7a1`, I just figured out and jumped to fix it out of bed.
+
+I also added the repositories.
