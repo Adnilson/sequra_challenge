@@ -6,7 +6,7 @@
 
 2. enter repository
 
-3. make sure you have ruby 3.2.0 and redis installed
+3. make sure you have `ruby` *`3.2.0`* and `redis` installed
 
 4. run `bundle install`
 
