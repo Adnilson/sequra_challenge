@@ -1,5 +1,5 @@
 class DisbursementsController < ApplicationController
   def index
-    render json: Disbursement.all
+    render json: Repositories::DisbursementRepository.all
   end
 end
