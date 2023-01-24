@@ -9,6 +9,7 @@ module Services
           order_id: order.id,
           amount: DisbursementAmount.new(order.amount).calculate
         )
+        order.update(disbursed: true)
       end
     end
   end

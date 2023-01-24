@@ -23,6 +23,7 @@ module Services
 
       assert_equal 2, Disbursement.count
       assert_equal 9.90, Disbursement.last.amount
+      assert_equal 2, Order.where(disbursed: true).count
     end
   end
 end
